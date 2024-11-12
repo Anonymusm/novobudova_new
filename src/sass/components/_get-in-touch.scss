@@ -1,0 +1,128 @@
+.get-in-touch {
+  margin: 0 auto;
+  padding: 60px 0;
+
+  @media screen and (min-width: 768px) {
+    margin: 0 auto;
+    padding: 100px 0;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 100px 0;
+  }
+}
+
+.get-in-touch__title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 28px;
+  color: #7e6d53;
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    font-size: 40px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 40px;
+  }
+}
+
+.get-in-touch__text {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  color: #7e6d53;
+  text-align: center;
+  margin-bottom: 26px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+}
+
+.get-in-touch__wrapper {
+  background: #7e6d53;
+  border-radius: 16px;
+  padding: 53px 70px;
+  width: 380px;
+  height: 218px;
+  column-gap: 64px;
+  margin: 0 auto;
+  row-gap: 14px;
+
+  @media screen and (min-width: 768px) {
+    border-radius: 16px;
+    padding: 53px 70px;
+    height: 226px;
+    column-gap: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 700px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    border-radius: 16px;
+    padding: 53px 70px;
+    height: 226px;
+    column-gap: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 700px;
+  }
+}
+
+.get-in-touch-list {
+  margin-bottom: 22px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+  }
+}
+
+.get-in-touch-list__link {
+  font-family: "Poppins', sans-serif";
+  font-weight: 300;
+  font-size: 16px;
+  color: #fff;
+  margin-left: 8px;
+}
+
+.get-in-touch-btn {
+  border-radius: 8px;
+  padding: 14px 76px;
+  width: 240px;
+  height: 48px;
+  background: #fcfcfb;
+  font-family: "Poppins', sans-serif";
+  font-weight: 300;
+  font-size: 16px;
+  color: #7e6d53;
+  border: none;
+
+  @media screen and (min-width: 768px) {
+    padding: 6px 0px;
+    width: 224px;
+    height: 54px;
+    font-size: 24px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 6px 0px;
+    width: 224px;
+    height: 54px;
+    font-size: 24px;
+  }
+}

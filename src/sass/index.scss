@@ -1,2 +1,10 @@
-@import './common';
-@import './example';
+@import "base/reset";
+@import "base/typography";
+@import "layout/header";
+@import "components/hero";
+@import "components/philosophy";
+@import "components/apartment";
+@import "components/infrastructure";
+@import "components/gallery";
+@import "components/get-in-touch";
+@import "layout/footer";
