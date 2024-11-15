@@ -5,9 +5,9 @@
   margin: 0 auto;
   max-width: 1600px;
 }
-.footer__wrapper {
+.footer-position {
   display: flex;
-  column-gap: 208px;
+  justify-content: space-between;
 }
 .footer__title {
   font-family: 'Inter', sans-serif;
@@ -27,9 +27,6 @@
   font-size: 16px;
   color: #fff;
 }
-.contacts {
-  padding-left: 208px;
-}
 .contacts__title {
   font-family: 'Inter', sans-serif;
   font-weight: 600;
@@ -48,11 +45,13 @@
   font-size: 16px;
   color: #fffefe;
 }
-.icons-list__icon {
-  fill: #fff;
+.icons-list {
   display: flex;
   flex-direction: column;
   row-gap: 30px;
+}
+.icons-list__icon {
+  fill: #fff;
 }
 .terms {
   font-family: 'Roboto', sans-serif;

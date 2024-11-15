@@ -1,0 +1,59 @@
+.philosophy {
+  width: 1600px;
+  background-image: url('../images/phylosophy-bg.png');
+  margin: 0 auto;
+  padding: 0 44px;
+}
+
+.philosophy-position {
+  display: flex;
+  justify-content: space-between;
+  background: #fcfcfb;
+  opacity: 0.9;
+  width: 100%;
+  height: 340px;
+  padding-bottom: 290px;
+}
+
+.philosophy-politic {
+  padding: 45px 161px;
+  width: 1600px;
+  height: 340px;
+}
+
+.philosophy-list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 92px;
+}
+
+.philosophy-list__item:nth-child(1) {
+  padding-left: 72px;
+}
+
+.philosophy-list__item:nth-child(3) {
+  padding-left: 104px;
+}
+
+.philosophy-list__text {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: #7e6d53;
+}
+
+.philosophy__title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  color: #2d2a22;
+  margin-bottom: 16px;
+}
+
+.philosophy__text {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: #7e6d53;
+  max-width: 393px;
+}
