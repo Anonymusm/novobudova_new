@@ -1,5 +1,3 @@
-// Меланія,коли будеш писати,то видаль цей коментар та пиши свій хедер зверху. Якщо-що що,то ниже стилі модалки,їх не видаляти!!!
-
 header {
   display: flex;
   justify-content: space-between;
@@ -24,8 +22,8 @@ header {
 
 .mobile--close__icon {
   fill: #fff;
-  @media screen and (min-width: 768px){
-   display: none; 
+  @media screen and (min-width: 768px) {
+    display: none;
   }
 }
 
@@ -47,9 +45,9 @@ header {
     column-gap: 32px;
   }
 
-     @media screen and (min-width: 1200px) {
-      column-gap: 48px;
-     }
+  @media screen and (min-width: 1200px) {
+    column-gap: 48px;
+  }
 }
 
 .navigation-list__item {
@@ -113,88 +111,54 @@ header {
   pointer-events: none;
 }
 
-// .no--scroll {
-//   overflow: hidden;
-// }
+.no--scroll {
+  overflow: hidden;
+}
 
-.modal {
+.contact-modal {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   border-radius: 4px;
-  width: 300px;
-  padding: 45px 25px;
+  width: 530px;
+  height: 624px;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 60px;
   background-color: #fff;
-
-  // @media screen and (min-width: 480px) {
-  //   width: 320px;
-  //   padding: 50px 25px;
-  // }
-
-  // @media screen and (min-width: 768px) {
-  //   padding: 60px;
-  //   width: 530px;
-  // }
 }
 
 .modal-close {
   background-color: transparent;
   border: 1px solid rgba(0, 0, 0, 0.1);
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 20px;
+  right: 20px;
   width: 32px;
   height: 32px;
   border-radius: 100%;
-
-  @media screen and (min-width: 480px) {
-    position: absolute;
-    top: 12px;
-    right: 12px;
-  }
-
-  @media screen and (min-width: 768px) {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-  }
+  margin: 0 auto;
 }
 
 .modal--close__icon {
   fill: #000;
   stroke-width: 1px;
   stroke: rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
 }
 
 .modal--close__icon:hover {
   fill: #41be9d;
 }
 
-.hero-modal__title {
+.header-modal__title {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 32px;
   text-align: center;
-  color: #35322d;
-
-  @media screen and (min-width: 480px) {
-    font-size: 20px;
-  }
-
-  @media screen and (min-width: 768px) {
-    font-size: 28px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    font-size: 32px;
-  }
+  color: #000;
+  margin-bottom: 40px;
 }
 
 .modal__input {
@@ -212,8 +176,78 @@ header {
   //   color: $text-color;
 }
 
-.form__item {
+.form-list {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   row-gap: 20px;
+}
+
+.form-list__item:nth-child(3) {
+  margin-bottom: 40px;
+}
+
+.modal__btn {
+  border-radius: 8px;
+  padding: 6px 0px;
+  width: 224px;
+  height: 54px;
+  background: #7e6d53;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: #fcfcfb;
+  border: none;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 32px;
+  background: linear-gradient(302deg, #2d2a22 0%, #7e6d53 100%);
+  z-index: 999;
+
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+}
+
+.js-open-menu {
+  background: none;
+  border: none;
+}
+
+.js-close-menu {
+  background: none;
+  border: none;
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.js-menu-container.is-open {
+  display: block;
+}
+
+.js-menu-container {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.mobile--close__icon {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.header__icon {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
