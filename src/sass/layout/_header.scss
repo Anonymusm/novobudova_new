@@ -14,13 +14,13 @@ header {
 }
 
 .logo {
-  font-style: Quicksand;
+  font-family: 'Montserrat', sans-serif;
   font-size: 17px;
   max-width: 70px;
   font-weight: 300;
 }
 
-.mobile--close__icon {
+.mobile--close__icon {       
   fill: #fff;
   @media screen and (min-width: 768px) {
     display: none;
@@ -145,7 +145,7 @@ header {
   fill: #000;
   stroke-width: 1px;
   stroke: rgba(0, 0, 0, 0.1);
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 .modal--close__icon:hover {
@@ -158,7 +158,7 @@ header {
   font-size: 32px;
   text-align: center;
   color: #000;
-  margin-bottom: 40px;
+  margin-bottom: 40px; 
 }
 
 .modal__input {
@@ -166,6 +166,7 @@ header {
   border-radius: 16px;
   width: 100%;
   height: 50px;
+  padding-left: 16px;
 }
 
 .form label {

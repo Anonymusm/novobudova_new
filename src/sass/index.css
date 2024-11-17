@@ -38,6 +38,10 @@ a {
   overflow: hidden;
 }
 
+body {
+  background-color: #EDE9E3;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -54,7 +58,7 @@ header {
 }
 
 .logo {
-  font-style: Quicksand;
+  font-family: "Montserrat", sans-serif;
   font-size: 17px;
   max-width: 70px;
   font-weight: 300;
@@ -214,6 +218,7 @@ header {
   border-radius: 16px;
   width: 100%;
   height: 50px;
+  padding-left: 16px;
 }
 
 .form label {
@@ -421,40 +426,155 @@ header {
 }
 
 .philosophy {
-  width: 1600px;
+  height: 677px;
   background-image: url("../images/phylosophy-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   margin: 0 auto;
-  padding: 0 44px;
+}
+@media screen and (min-width: 480px) {
+  .philosophy {
+    height: 677px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .philosophy {
+    height: 630px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .philosophy {
+    max-width: 1600px;
+  }
+}
+
+.philosophy__wrapper {
+  width: 100%;
+  height: 50%;
+  background: #fcfcfb;
+  opacity: 0.9;
 }
 
 .philosophy-position {
-  display: flex;
-  justify-content: space-between;
-  background: #fcfcfb;
-  opacity: 0.9;
   width: 100%;
-  height: 340px;
-  padding-bottom: 290px;
+  height: 398px;
+  padding-bottom: 279px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+@media screen and (min-width: 480px) {
+  .philosophy-position {
+    display: block;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 279px;
+    height: 398px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .philosophy-position {
+    display: flex;
+    justify-content: space-between;
+    height: 324px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 306px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .philosophy-position {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 290px;
+    padding-left: 134px;
+    padding-right: 134px;
+    height: 340px;
+  }
 }
 
 .philosophy-politic {
-  padding: 45px 161px;
-  width: 1600px;
-  height: 340px;
+  margin-top: 32px;
+  width: 336px;
+  height: 122px;
+}
+@media screen and (min-width: 480px) {
+  .philosophy-politic {
+    margin-top: 32px;
+    width: 280px;
+    height: 122px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .philosophy-politic {
+    margin-top: 0;
+    padding-top: 76px;
+    width: 336px;
+    height: 172px;
+    padding-bottom: 76px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .philosophy-politic {
+    margin-top: 0;
+    padding-top: 96px;
+    width: 393px;
+    height: 148px;
+    padding-bottom: 96px;
+  }
 }
 
 .philosophy-list {
   display: flex;
   flex-wrap: wrap;
-  row-gap: 92px;
+  width: 100%;
+  gap: 20px;
+  padding-top: 20px;
+}
+@media screen and (min-width: 480px) {
+  .philosophy-list {
+    width: 100%;
+    gap: 20px;
+    padding-top: 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .philosophy-list {
+    row-gap: 60px;
+    -moz-column-gap: 32px;
+         column-gap: 32px;
+    width: 50%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .philosophy-list {
+    row-gap: 92px;
+    width: 537px;
+    -moz-column-gap: 72px;
+         column-gap: 72px;
+    padding-top: 44px;
+    padding-bottom: 44px;
+  }
 }
 
-.philosophy-list__item:nth-child(1) {
-  padding-left: 72px;
+.philosophy-list__item {
+  flex-basis: calc((100% - 20px) / 2);
 }
-
-.philosophy-list__item:nth-child(3) {
-  padding-left: 104px;
+@media screen and (min-width: 480px) {
+  .philosophy-list__item {
+    flex-basis: calc((100% - 20px) / 2);
+  }
+}
+@media screen and (min-width: 768px) {
+  .philosophy-list__item {
+    flex-basis: calc((100% - 32px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .philosophy-list__item {
+    flex-basis: calc((100% - 72px) / 2);
+  }
 }
 
 .philosophy-list__text {
@@ -467,23 +587,54 @@ header {
 .philosophy__title {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
-  font-size: 24px;
+  font-size: 16px;
   color: #2d2a22;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
+}
+@media screen and (min-width: 480px) {
+  .philosophy__title {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .philosophy__title {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
 }
 
 .philosophy__text {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 12px;
   color: #7e6d53;
-  max-width: 393px;
+  max-width: 280px;
+}
+@media screen and (min-width: 480px) {
+  .philosophy__text {
+    font-size: 12px;
+    max-width: 280px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .philosophy__text {
+    font-size: 16px;
+    max-width: 336px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .philosophy__text {
+    font-size: 16px;
+    max-width: 393px;
+  }
 }
 
 .apartment {
   padding-top: 18px;
   padding-bottom: 10px;
   margin: 0 auto;
+  background: #fff;
 }
 @media screen and (min-width: 480px) {
   .apartment {
@@ -493,13 +644,13 @@ header {
 }
 @media screen and (min-width: 768px) {
   .apartment {
-    padding-bottom: 27px;
+    padding-bottom: 40px;
     padding-top: 18px;
   }
 }
 @media screen and (min-width: 1200px) {
   .apartment {
-    padding-bottom: 24px;
+    padding-bottom: 40px;
     padding-top: 40px;
   }
 }
@@ -685,42 +836,120 @@ header {
 }
 
 .infrastructure {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 60px;
   margin: 0 auto;
+  justify-self: 497px;
+}
+@media screen and (min-width: 768px) {
+  .infrastructure {
+    padding-top: 150px;
+    height: 570px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .infrastructure {
+    background-image: none;
+    max-width: 1600px;
+    height: 566px;
+  }
 }
 
-.infrastructure-position {
-  display: flex;
-  justify-content: space-between;
-}
-
-.infrastructure-content {
+.infrastructure-main {
   background-image: url("../images/infrastructure-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100%;
+}
+@media screen and (min-width: 1200px) {
+  .infrastructure-main {
+    background-image: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .infrastructure-position {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.infrastructure-content {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+@media screen and (min-width: 1200px) {
+  .infrastructure-content {
+    background-image: url("../images/infrastructure-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 
 .infrastructure__title {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
-  font-size: 40px;
+  font-size: 28px;
   color: #7e6d53;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
+  position: absolute;
+  top: -40px;
+}
+@media screen and (min-width: 768px) {
+  .infrastructure__title {
+    position: absolute;
+    top: -70px;
+    font-size: 40px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .infrastructure__title {
+    margin-bottom: 20px;
+  }
+}
+
+.infrastructure__wrapper {
+  margin: 0 auto;
+  width: 320px;
+  height: 431px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 20px;
+}
+@media screen and (min-width: 768px) {
+  .infrastructure__wrapper {
+    height: 486px;
+    width: 768px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 330px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .infrastructure__wrapper {
+    width: 1144px;
+    padding-left: 645px;
+  }
 }
 
 .infrastructure-list {
-  height: 470px;
-  width: 331px;
+  padding: 24px 18px;
+  height: 351px;
+  width: 280px;
   background: #fcfcfb;
   opacity: 0.8;
-  padding-top: 24px;
-  padding-bottom: 24px;
   display: flex;
   flex-direction: column;
-  row-gap: 60px;
+  row-gap: 0;
   border-radius: 8px;
+}
+@media screen and (min-width: 768px) {
+  .infrastructure-list {
+    height: 470px;
+    width: 331px;
+    padding: 24px 32px;
+    row-gap: 60px;
+  }
 }
 
 .infrastructure-list__item {
@@ -743,10 +972,15 @@ header {
   position: absolute;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 14px;
   text-align: center;
   color: #2d2a22;
   bottom: 24px;
+}
+@media screen and (min-width: 768px) {
+  .infrastructure-list__amount {
+    font-size: 16px;
+  }
 }
 
 .infrastructure-text__wrapper {
@@ -757,15 +991,42 @@ header {
   position: absolute;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   text-align: center;
   color: rgba(0, 0, 0, 0.5);
-  height: 24px;
-  width: 160px;
+  height: 21px;
+  width: 138px;
+}
+@media screen and (min-width: 768px) {
+  .infrastructure__text {
+    font-size: 16px;
+    width: 160px;
+    height: 24px;
+  }
+}
+
+.infrastructure__text:nth-child(1) {
+  position: absolute;
+  bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .infrastructure__text:nth-child(1) {
+    bottom: 40px;
+  }
+}
+
+.infrastructure__text:nth-child(3) {
+  position: absolute;
+  bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .infrastructure__text:nth-child(3) {
+    bottom: 40px;
+  }
 }
 
 .gallery {
-  padding-bottom: 100px;
+  width: 1144px;
   padding-top: 100px;
   margin: 0 auto;
 }
@@ -775,6 +1036,7 @@ header {
   font-weight: 500;
   font-size: 40px;
   color: #7e6d53;
+  padding-top: 100px;
 }
 
 .content {
@@ -784,7 +1046,7 @@ header {
 }
 
 .carousel {
-  margin-top: 100px;
+  margin-top: 20px;
   max-width: 500px;
   max-height: 100%;
 }
@@ -937,23 +1199,83 @@ header {
 
 .footer {
   background: linear-gradient(213deg, #2d2a22 0%, #7e6d53 100%);
-  padding-top: 32px;
+  padding-top: 20px;
   padding-bottom: 8px;
   margin: 0 auto;
-  max-width: 1600px;
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    padding-top: 32px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer {
+    max-width: 1600px;
+  }
 }
 
 .footer-position {
   display: flex;
   justify-content: space-between;
 }
+@media screen and (min-width: 768px) {
+  .footer-position {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+}
+
+.logo {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .logo {
+    display: block;
+    padding-right: 127px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 17px;
+    max-width: 70px;
+    font-weight: 300;
+    color: #fff;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    padding-right: 162px;
+  }
+}
+
+.footer__navigation {
+  padding-right: 46px;
+}
+@media screen and (min-width: 768px) {
+  .footer__navigation {
+    padding-right: 83px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__navigation {
+    padding-right: 208px;
+  }
+}
 
 .footer__title {
   font-family: "Inter", sans-serif;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 18px;
   color: #fff;
   margin-bottom: 16px;
+}
+@media screen and (min-width: 480px) {
+  .footer__title {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__title {
+    font-size: 20px;
+  }
 }
 
 .nav-list {
@@ -965,16 +1287,37 @@ header {
 .nav-list__link {
   font-family: "Inter", sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   color: #fff;
+}
+@media screen and (min-width: 768px) {
+  .nav-list__link {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts {
+    padding-right: 91px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts {
+    padding-right: 253px;
+  }
 }
 
 .contacts__title {
   font-family: "Inter", sans-serif;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 18px;
   color: #fff;
   margin-bottom: 16px;
+}
+@media screen and (min-width: 768px) {
+  .contacts__title {
+    font-size: 20px;
+  }
 }
 
 .contacts-list {
@@ -986,14 +1329,38 @@ header {
 .contacts-list__link {
   font-family: "Inter", sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   color: #fffefe;
+}
+@media screen and (min-width: 768px) {
+  .contacts-list__link {
+    font-size: 16px;
+  }
 }
 
 .icons-list {
   display: flex;
-  flex-direction: column;
-  row-gap: 30px;
+  flex-direction: row;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+@media screen and (min-width: 480px) {
+  .icons-list {
+    flex-direction: row;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .icons-list {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .icons-list {
+    row-gap: 30px;
+  }
 }
 
 .icons-list__icon {
@@ -1004,9 +1371,18 @@ header {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 14px;
-  line-height: 121%;
+  line-height: 1.21;
   color: #979797;
   text-align: center;
+  margin-top: 20px;
+  width: 279px;
+}
+@media screen and (min-width: 768px) {
+  .terms {
+    width: 465px;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
 }
 
 .service-terms {
