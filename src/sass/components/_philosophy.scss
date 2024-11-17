@@ -1,38 +1,129 @@
 .philosophy {
-  width: 1600px;
+  height: 677px;
   background-image: url('../images/phylosophy-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
   margin: 0 auto;
-  padding: 0 44px;
+
+  @media screen and (min-width: 480px) {
+    height: 677px;
+  }
+  @media screen and (min-width: 768px) {
+    height: 630px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1600px;
+  }
+}
+
+.philosophy__wrapper {
+  width: 100%;
+  height: 50%;
+  background: #fcfcfb;
+  opacity: 0.9;
 }
 
 .philosophy-position {
-  display: flex;
-  justify-content: space-between;
-  background: #fcfcfb;
-  opacity: 0.9;
   width: 100%;
-  height: 340px;
-  padding-bottom: 290px;
+  height: 398px;
+  padding-bottom: 279px;
+  padding-left: 20px;
+  padding-right: 20px;
+  @media screen and (min-width: 480px) {
+    display: block;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 279px;
+    height: 398px;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    height: 324px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 306px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 290px;
+    padding-left: 134px;
+    padding-right: 134px;
+    height: 340px;
+  }
 }
 
 .philosophy-politic {
-  padding: 45px 161px;
-  width: 1600px;
-  height: 340px;
+  margin-top: 32px;
+  width: 336px;
+  height: 122px;
+  @media screen and (min-width: 480px) {
+    margin-top: 32px;
+    width: 280px;
+    height: 122px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
+    padding-top: 76px;
+    width: 336px;
+    height: 172px;
+    padding-bottom: 76px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 0;
+    padding-top: 96px;
+    width: 393px;
+    height: 148px;
+    padding-bottom: 96px;
+  }
 }
 
 .philosophy-list {
   display: flex;
   flex-wrap: wrap;
-  row-gap: 92px;
-}
+  width: 100%;
+  gap: 20px;
+  padding-top: 20px;
+  @media screen and (min-width: 480px) {
+    width: 100%;
+    gap: 20px;
+    padding-top: 20px;
+  }
 
-.philosophy-list__item:nth-child(1) {
-  padding-left: 72px;
-}
+  @media screen and (min-width: 768px) {
+    row-gap: 60px;
+    column-gap: 32px;
+    width: 50%;
+        padding-top: 40px;
+          padding-bottom: 40px;
+  }
 
-.philosophy-list__item:nth-child(3) {
-  padding-left: 104px;
+  @media screen and (min-width: 1200px) {
+    row-gap: 92px;
+    width: 537px;
+    column-gap: 72px;
+    padding-top: 44px;
+    padding-bottom: 44px;
+  }
+}
+.philosophy-list__item {
+  flex-basis: calc((100% - 20px) / 2);
+
+  @media screen and (min-width: 480px) {
+    flex-basis: calc((100% - 20px) / 2);
+  }
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 32px) / 2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 72px) / 2);
+  }
 }
 
 .philosophy-list__text {
@@ -45,15 +136,38 @@
 .philosophy__title {
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
-  font-size: 24px;
+  font-size: 16px;
   color: #2d2a22;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
+  @media screen and (min-width: 480px) {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
 }
 
 .philosophy__text {
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 12px;
   color: #7e6d53;
-  max-width: 393px;
+  max-width: 280px;
+  @media screen and (min-width: 480px) {
+      font-size: 12px;
+        max-width: 280px;
+    }
+  
+    @media screen and (min-width: 768px) {      
+      font-size: 16px;
+        max-width: 336px;    
+    }
+      
+    @media screen and (min-width: 1200px) {
+      font-size: 16px;
+        max-width: 393px;
+    }
 }
