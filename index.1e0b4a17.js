@@ -1,0 +1,2 @@
+!function(){var o={openModalBtn:document.querySelector("[hero-modal-open]"),closeModalBtn:document.querySelector("[hero-modal-close]"),modal:document.querySelector("[hero-backdrop]")};function e(){o.modal.classList.toggle("is-hidden"),document.body.classList.toggle("no-scroll")}o.openModalBtn.addEventListener("click",e),o.closeModalBtn.addEventListener("click",e)}();
+//# sourceMappingURL=index.1e0b4a17.js.map
