@@ -2,7 +2,42 @@
   <div class="container">
     <h1 class="hero__title">Nice view</h1>
     <p class="hero__text">For your comfortable life with your family</p>
-    <button class="hero-btn">Contact us</button>  
+    <button class="hero-btn" hero-modal-open>Contact us</button>  
+    <div class="hero-backdrop is-hidden no-scroll" hero-backdrop>
+      <div class="hero-modal">
+        <button type="button" class="modal-close" hero-modal-close>
+          <svg class="modal--close__icon" width="11" height="11">
+            <use href="./icons/symbol-defs.svg#icon-close-btn"></use>
+          </svg>
+        </button>
+        <h2 class="hero-modal__title">
+          Leave your contacts and we will contact you
+        </h2>
+        <form class="form">
+          <ul class="form-list">
+            <li class="form-list__item">
+              <label for="name">Name</label>
+              <input type="text" id="name" minlength="1" maxlength="22" required class="modal__input"
+                placeholder="Yuliia" />
+            </li>
+            <li class="form-list__item">
+              <label for="phone__number">Telephone</label>
+              <input type="tel" id="phone-number" minlength="8" maxlength="15" required class="modal__input"
+                placeholder="+380" />
+            </li>
+            <li class="form-list__item">
+              <label for="email">Email</label>
+              <input type="email" id="email" minlength="10" maxlength="50" required class="modal__input"
+                placeholder="Contact@gmail.com" />
+            </li>
+          </ul>
+          <button type="submit" class="modal__btn">Contact us</button>
+        </form>
+      </div>
+    </div>
+    </div>
+    </header>
+
   </div>    
 </section>    
-      
+        

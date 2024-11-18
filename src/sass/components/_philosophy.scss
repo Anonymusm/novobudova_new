@@ -12,7 +12,7 @@
     height: 630px;
   }
   @media screen and (min-width: 1200px) {
-    max-width: 1600px;
+      max-width: 1600px;
   }
 }
 
@@ -72,6 +72,7 @@
     width: 336px;
     height: 172px;
     padding-bottom: 76px;
+    padding-left: 32px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -131,6 +132,7 @@
   font-weight: 300;
   font-size: 16px;
   color: #7e6d53;
+    margin-top: 8px;
 }
 
 .philosophy__title {
@@ -147,6 +149,7 @@
   @media screen and (min-width: 768px) {
     font-size: 24px;
     margin-bottom: 16px;
+    min-width: 325px;
   }
 }
 
