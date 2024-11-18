@@ -425,6 +425,113 @@ header {
   }
 }
 
+.hero-backdrop {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition-duration: 1000ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.hero-modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 4px;
+  width: 530px;
+  height: 624px;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 60px;
+  background-color: #fff;
+}
+
+.modal-close {
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+  margin: 0 auto;
+}
+
+.modal--close__icon {
+  fill: #000;
+  stroke-width: 1px;
+  stroke: rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+}
+
+.modal--close__icon:hover {
+  fill: #41be9d;
+}
+
+.header-modal__title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  text-align: center;
+  color: #000;
+  margin-bottom: 40px;
+}
+
+.modal__input {
+  border: 1px solid #3a3631;
+  border-radius: 16px;
+  width: 100%;
+  height: 50px;
+  padding-left: 16px;
+}
+
+.form label {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #999ea3;
+}
+
+.form-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.form-list__item:nth-child(3) {
+  margin-bottom: 40px;
+}
+
+.modal__btn {
+  border-radius: 8px;
+  padding: 6px 0px;
+  width: 224px;
+  height: 54px;
+  background: #7e6d53;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: #fcfcfb;
+  border: none;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+}
+
 .philosophy {
   height: 677px;
   background-image: url("../images/phylosophy-bg.png");
@@ -511,6 +618,7 @@ header {
     width: 336px;
     height: 172px;
     padding-bottom: 76px;
+    padding-left: 32px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -582,6 +690,7 @@ header {
   font-weight: 300;
   font-size: 16px;
   color: #7e6d53;
+  margin-top: 8px;
 }
 
 .philosophy__title {
@@ -601,6 +710,7 @@ header {
   .philosophy__title {
     font-size: 24px;
     margin-bottom: 16px;
+    min-width: 325px;
   }
 }
 
@@ -635,6 +745,8 @@ header {
   padding-bottom: 10px;
   margin: 0 auto;
   background: #fff;
+  padding-left: 85px;
+  padding-right: 85px;
 }
 @media screen and (min-width: 480px) {
   .apartment {
@@ -644,12 +756,15 @@ header {
 }
 @media screen and (min-width: 768px) {
   .apartment {
+    padding-left: 0;
+    padding-right: 0;
     padding-bottom: 40px;
     padding-top: 18px;
   }
 }
 @media screen and (min-width: 1200px) {
   .apartment {
+    max-width: 1600px;
     padding-bottom: 40px;
     padding-top: 40px;
   }
@@ -662,6 +777,7 @@ header {
   color: #7e6d53;
   margin-bottom: 20px;
   width: 280px;
+  text-align: center;
 }
 @media screen and (min-width: 480px) {
   .apartment__title {
@@ -679,9 +795,10 @@ header {
 }
 @media screen and (min-width: 1200px) {
   .apartment__title {
+    padding-left: 68px;
     font-size: 40px;
     margin-bottom: 40px;
-    min-width: 485px;
+    min-width: 552px;
   }
 }
 
@@ -709,9 +826,9 @@ header {
 }
 
 .apartment-list__item {
-  width: 280px;
+  width: 100%;
   margin-bottom: 28px;
-  padding: 20px 40px;
+  padding: 20px 34px;
 }
 @media screen and (min-width: 480px) {
   .apartment-list__item {
@@ -807,8 +924,8 @@ header {
 .apartment-btn {
   display: block;
   border-radius: 16px;
-  padding: 14px 28px;
-  width: 230px;
+  padding: 14px 36.5px;
+  width: 258px;
   background: #7e6d53;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
@@ -819,11 +936,6 @@ header {
   text-align: center;
   cursor: pointer;
 }
-@media screen and (min-width: 480px) {
-  .apartment-btn {
-    width: 240px;
-  }
-}
 @media screen and (min-width: 768px) {
   .apartment-btn {
     width: 264px;
@@ -832,6 +944,15 @@ header {
 @media screen and (min-width: 1200px) {
   .apartment-btn {
     width: 264px;
+  }
+}
+
+.apartment-main {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .apartment-main {
+    display: block;
   }
 }
 
@@ -862,8 +983,11 @@ header {
   transform: translate(-50%, -50%);
   border-radius: 24px;
   width: 562px;
-  height: 208px;
   background: #ede9e3;
+  padding-left: 40px;
+  padding-right: 44px;
+  padding-bottom: 32px;
+  padding-top: 24px;
 }
 
 .modal-close {
@@ -887,6 +1011,78 @@ header {
 
 .modal--close__icon:hover {
   fill: #41be9d;
+}
+
+.aprartment-main__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.img__wrapper {
+  width: 112px;
+  height: 134px;
+}
+
+.apartment-modal__wrapper {
+  width: 296px;
+}
+
+.download-modal__title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #7e6d53;
+  margin-bottom: 24px;
+}
+
+.download-modal__text {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: #7e6d53;
+  margin-bottom: 24px;
+  width: 249px;
+}
+
+.download-modal-field {
+  position: relative;
+  border: 1px solid #7e6d53;
+  border-radius: 8px;
+  width: 296px;
+  height: 32px;
+  padding-left: 16px;
+  padding-right: 131px;
+  padding-bottom: 8px;
+  background-color: transparent;
+}
+
+.download-modal-field::-moz-placeholder {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 10px;
+  color: #2d2a22;
+  min-width: 150px;
+  max-height: 16px;
+}
+
+.download-modal-field::placeholder {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 10px;
+  color: #2d2a22;
+  min-width: 150px;
+  max-height: 16px;
+}
+
+.field__icon {
+  position: absolute;
+  right: 60px;
+  bottom: 60px;
+}
+
+.apartment-modal-btn {
+  background-color: transparent;
+  border: none;
 }
 
 .infrastructure {
@@ -989,7 +1185,7 @@ header {
 .infrastructure-list {
   padding: 24px 18px;
   height: 351px;
-  width: 280px;
+  width: 300px;
   background: #fcfcfb;
   opacity: 0.8;
   display: flex;
