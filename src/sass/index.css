@@ -1313,14 +1313,48 @@ header {
 
 .content {
   display: flex;
-  justify-content: center;
   margin-bottom: 100px;
+  margin-left: 74px;
+}
+@media screen and (min-width: 768px) {
+  .content {
+    margin-left: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .content {
+    margin-left: 362px;
+    margin-right: 362px;
+  }
 }
 
 .carousel {
   margin-top: 20px;
   max-width: 500px;
   max-height: 100%;
+}
+
+.w-100 {
+  width: 159px !important;
+  height: 174px !important;
+}
+@media screen and (min-width: 480px) {
+  .w-100 {
+    width: 300px !important;
+    height: 330px !important;
+  }
+}
+@media screen and (min-width: 768px) {
+  .w-100 {
+    width: 364px !important;
+    height: 395px !important;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .w-100 {
+    width: 556px !important;
+    height: 589px !important;
+  }
 }
 
 .get-in-touch {
