@@ -1,25 +1,52 @@
 .gallery {
-    width: 1144px;
-    padding-top: 100px;
-    margin: 0 auto;
+  width: 1144px;
+  padding-top: 100px;
+  margin: 0 auto;
 }
 
 .gallery__title {
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    font-size: 40px;
-    color: #7e6d53;
-    padding-top: 100px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  color: #7e6d53;
+  padding-top: 100px;
 }
 
 .content {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 100px; 
+  display: flex;
+  margin-bottom: 100px;
+  margin-left: 74px;
+
+@media screen and (min-width: 768px) {
+       margin-left: 0;
+    }
+        @media screen and (min-width: 1200px) {
+            margin-left: 362px;
+            margin-right: 362px;
+        }
 }
 
-.carousel {
-    margin-top: 20px;
-    max-width: 500px;
-    max-height: 100%;
+.carousel {     
+  margin-top: 20px;
+  max-width: 500px;
+  max-height: 100%;
+}     
+
+.w-100 {
+  width: 159px !important;
+  height: 174px !important;
+
+@media screen and (min-width: 480px) {
+        width: 300px !important;
+        height: 330px !important;
+    }
+
+  @media screen and (min-width: 768px) {
+    width: 364px !important;
+    height: 395px !important;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 556px !important;
+    height: 589px !important;
+  }
 }
