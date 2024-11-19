@@ -58,10 +58,17 @@ header {
 }
 
 .logo {
+  display: block;
   font-family: "Montserrat", sans-serif;
   font-size: 17px;
-  max-width: 70px;
   font-weight: 300;
+  color: #fff;
+  width: 30px;
+}
+@media screen and (min-width: 768px) {
+  .logo {
+    width: 56px;
+  }
 }
 
 .mobile--close__icon {
@@ -255,6 +262,7 @@ header {
 }
 
 .menu-container {
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -273,6 +281,9 @@ header {
 }
 
 .js-close-menu {
+  position: absolute;
+  right: 20px;
+  margin-bottom: 30px;
   background: none;
   border: none;
 }
@@ -289,6 +300,17 @@ header {
   .js-menu-container {
     display: none;
   }
+}
+
+.nav-menu {
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 108px;
+  padding-right: 108px;
+  padding-bottom: 254px;
+  row-gap: 24px;
+  text-align: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -1467,6 +1489,7 @@ header {
 .footer-position {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 @media screen and (min-width: 768px) {
   .footer-position {
@@ -1476,11 +1499,11 @@ header {
   }
 }
 
-.logo {
+.footer .logo {
   display: none;
 }
 @media screen and (min-width: 768px) {
-  .logo {
+  .footer .logo {
     display: block;
     padding-right: 127px;
     font-family: "Montserrat", sans-serif;
@@ -1491,7 +1514,7 @@ header {
   }
 }
 @media screen and (min-width: 1200px) {
-  .logo {
+  .footer .logo {
     padding-right: 162px;
   }
 }
@@ -1588,6 +1611,15 @@ header {
   }
 }
 
+.icons {
+  margin-top: 28px;
+}
+@media screen and (min-width: 768px) {
+  .icons {
+    margin-top: 0;
+  }
+}
+
 .icons-list {
   display: flex;
   flex-direction: row;
@@ -1651,4 +1683,8 @@ header {
           text-decoration-skip-ink: none;
   color: #fff;
   text-align: center;
+}
+
+.contacts, .footer__wrapper {
+  width: 50%;
 }/*# sourceMappingURL=index.css.map */
