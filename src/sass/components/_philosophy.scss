@@ -12,7 +12,7 @@
     height: 630px;
   }
   @media screen and (min-width: 1200px) {
-      max-width: 1600px;
+    max-width: 1600px;
   }
 }
 
@@ -100,8 +100,8 @@
     row-gap: 60px;
     column-gap: 32px;
     width: 50%;
-        padding-top: 40px;
-          padding-bottom: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -132,7 +132,7 @@
   font-weight: 300;
   font-size: 16px;
   color: #7e6d53;
-    margin-top: 8px;
+  margin-top: 8px;
 }
 
 .philosophy__title {
@@ -160,17 +160,25 @@
   color: #7e6d53;
   max-width: 280px;
   @media screen and (min-width: 480px) {
-      font-size: 12px;
-        max-width: 280px;
-    }
-  
-    @media screen and (min-width: 768px) {      
-      font-size: 16px;
-        max-width: 336px;    
-    }
-      
-    @media screen and (min-width: 1200px) {
-      font-size: 16px;
-        max-width: 393px;
-    }
+    font-size: 12px;
+    max-width: 280px;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    max-width: 336px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    max-width: 393px;
+  }
+}
+
+.philosophy-padding {
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 100px;
+  }
 }
