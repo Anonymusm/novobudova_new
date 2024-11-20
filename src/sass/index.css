@@ -50,6 +50,12 @@ header {
   background: linear-gradient(to right, #a18b68, #37392c);
   color: white;
 }
+@media screen and (min-width: 1200px) {
+  header {
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+}
 
 .header-position {
   display: flex;
@@ -180,12 +186,20 @@ header {
   top: 50%;
   transform: translate(-50%, -50%);
   border-radius: 4px;
-  width: 530px;
-  height: 624px;
-  padding-left: 60px;
-  padding-right: 60px;
-  padding-top: 60px;
+  width: 571px;
+  height: 355px;
+  padding-left: 32px;
+  padding-right: 57px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   background-color: #fff;
+}
+
+.header-modal-position {
+  display: flex;
+  justify-content: space-between;
+  -moz-column-gap: 70px;
+       column-gap: 70px;
 }
 
 .modal-close {
@@ -212,48 +226,56 @@ header {
 }
 
 .header-modal__title {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 700;
-  font-size: 32px;
+  font-size: 28px;
+  color: #2d2a22;
   text-align: center;
-  color: #000;
-  margin-bottom: 40px;
+  margin-bottom: 32px;
 }
 
-.modal__input {
-  border: 1px solid #3a3631;
-  border-radius: 16px;
-  width: 100%;
-  height: 50px;
-  padding-left: 16px;
+.header-modal__text {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  color: #2d2a22;
 }
 
-.form label {
-  font-family: "Montserrat", sans-serif;
+.header-modal__text:nth-child(1) {
+  margin-bottom: 4px;
+  min-width: 195px;
+}
+
+.header-modal__text:nth-child(2) {
+  margin-bottom: 12px;
+}
+
+.header-modal__text:nth-child(3) {
+  font-weight: 500;
+  color: #7e6d53;
+  margin-bottom: 8px;
+}
+
+.header-modal__text:nth-child(4) {
+  font-weight: 300;
+  font-size: 14px;
+  margin-bottom: 18px;
+}
+
+.header-modal__text span {
   font-weight: 400;
-  font-size: 16px;
-  color: #999ea3;
+  color: #7e6d53;
+  padding-left: 10px;
 }
 
-.form-list {
-  display: flex;
-  flex-direction: column;
-  row-gap: 20px;
-}
-
-.form-list__item:nth-child(3) {
-  margin-bottom: 40px;
-}
-
-.modal__btn {
+.header-modal__btn {
   border-radius: 8px;
-  padding: 6px 0px;
-  width: 224px;
-  height: 54px;
+  width: 192px;
+  height: 48px;
   background: #7e6d53;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 16px;
   color: #fcfcfb;
   border: none;
   text-align: center;
@@ -469,28 +491,45 @@ header {
 
 .hero-modal {
   position: absolute;
-  left: 50%;
-  top: 50%;
+  left: 21%;
+  top: 18%;
   transform: translate(-50%, -50%);
   border-radius: 4px;
-  width: 530px;
-  height: 624px;
-  padding-left: 60px;
-  padding-right: 60px;
-  padding-top: 60px;
+  width: 320px;
+  height: 519px;
+  padding-top: 50px;
+  padding-left: 20px;
+  padding-right: 27px;
   background-color: #fff;
+}
+@media screen and (min-width: 768px) {
+  .hero-modal {
+    left: 50%;
+    top: 50%;
+    width: 530px;
+    height: 600px;
+    padding-top: 60px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
 }
 
 .modal-close {
   background-color: transparent;
   border: 1px solid rgba(0, 0, 0, 0.1);
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 12px;
+  right: 12px;
   width: 32px;
   height: 32px;
   border-radius: 100%;
   margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .modal-close {
+    top: 20px;
+    right: 20px;
+  }
 }
 
 .modal--close__icon {
@@ -504,13 +543,27 @@ header {
   fill: #41be9d;
 }
 
-.header-modal__title {
+.hero-modal__title {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  font-size: 32px;
+  font-size: 20px;
   text-align: center;
-  color: #000;
-  margin-bottom: 40px;
+  color: #35322d;
+  margin-bottom: 28px;
+  margin-top: 8px;
+}
+@media screen and (min-width: 768px) {
+  .hero-modal__title {
+    font-size: 28px;
+    margin-bottom: 40px;
+    margin-top: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-modal__title {
+    font-size: 32px;
+    margin-top: 0;
+  }
 }
 
 .modal__input {
@@ -520,12 +573,22 @@ header {
   height: 50px;
   padding-left: 16px;
 }
+@media screen and (min-width: 768px) {
+  .modal__input {
+    height: 52px;
+  }
+}
 
 .form label {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   color: #999ea3;
+}
+@media screen and (min-width: 768px) {
+  .form label {
+    font-size: 16px;
+  }
 }
 
 .form-list {
@@ -534,24 +597,38 @@ header {
   row-gap: 20px;
 }
 
-.form-list__item:nth-child(3) {
-  margin-bottom: 40px;
-}
-
 .modal__btn {
   border-radius: 8px;
   padding: 6px 0px;
-  width: 224px;
-  height: 54px;
+  width: 192px;
+  height: 48px;
   background: #7e6d53;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 16px;
   color: #fcfcfb;
   border: none;
   text-align: center;
   margin: 0 auto;
   display: block;
+  margin-top: 28px;
+}
+@media screen and (min-width: 768px) {
+  .modal__btn {
+    margin-top: 40px;
+    width: 224px;
+    height: 54px;
+    font-size: 24px;
+  }
+}
+
+.hero-padding {
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .hero-padding {
+    padding-bottom: 100px;
+  }
 }
 
 .philosophy {
@@ -759,6 +836,15 @@ header {
   .philosophy__text {
     font-size: 16px;
     max-width: 393px;
+  }
+}
+
+.philosophy-padding {
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .philosophy-padding {
+    padding-bottom: 100px;
   }
 }
 
@@ -1108,7 +1194,7 @@ header {
 }
 
 .infrastructure {
-  padding-top: 60px;
+  padding-top: 95px;
   margin: 0 auto;
   justify-self: 497px;
 }
@@ -1165,7 +1251,7 @@ header {
   color: #7e6d53;
   margin-bottom: 24px;
   position: absolute;
-  top: -40px;
+  top: -55px;
 }
 @media screen and (min-width: 768px) {
   .infrastructure__title {
@@ -1647,6 +1733,7 @@ header {
 
 .icons {
   margin-top: 28px;
+  margin-bottom: 20px;
 }
 @media screen and (min-width: 768px) {
   .icons {
@@ -1690,14 +1777,13 @@ header {
   line-height: 1.21;
   color: #979797;
   text-align: center;
-  margin-top: 20px;
   width: 279px;
+  margin: 0 auto;
 }
 @media screen and (min-width: 768px) {
   .terms {
     width: 465px;
     margin: 0 auto;
-    margin-top: 20px;
   }
 }
 
