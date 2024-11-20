@@ -39,7 +39,7 @@
   @media screen and (min-width: 1200px) {
     padding-right: 162px;
   }
-}
+}    
 
 .footer__navigation {
   padding-right: 46px;
@@ -164,11 +164,12 @@
   color: #979797;    
   text-align: center;  
   width: 279px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
 
   @media screen and (min-width: 768px) {    
-    width: 465px; 
-    margin: 0 auto;
+    min-width: 555px; 
   }
 }
 
